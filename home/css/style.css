@@ -1,0 +1,147 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f8f9fa;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.navbar .logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar .logo .text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.navbar .signup-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.navbar .signup-btn:hover {
+  background-color: #0056b3;
+}
+
+.navbar .login-btn {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.navbar .login-btn:hover {
+  background-color: greenyellow;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f0f4f8;
+}
+
+.hero .hero-text {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero .cta-btn {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hero .cta-btn:hover {
+  background-color: #0056b3;
+}
+
+.hero img {
+  max-width: 40%;
+  border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #666;
+  font-size: 14px;
+}
