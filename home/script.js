@@ -1,21 +1,13 @@
-document.getElementById("registerForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent form submission
-  const phoneNumber = document.getElementById("phone-number").value;
-  console.log("Phone number:", phoneNumber);
-  alert(`Phone number submitted: ${phoneNumber}`);
+document.addEventListener("DOMContentLoaded", () => {
+  let currentStep = 0;
+  const formGroups = document.querySelectorAll(".form-group");
+
+  window.nextStep = () => {
+    if (currentStep < formGroups.length - 1) {
+      formGroups[currentStep].classList.remove("active");
+      currentStep++;
+      formGroups[currentStep].classList.add("active");
+    }
+  };
 });
 
-
-document.getElementById("loginForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent form submission
-  const phoneNumber = document.getElementById("phone-number").value;
-  const password = document.getElementById("password").value;
-
-  if (phoneNumber && password) {
-    console.log("Phone number:", phoneNumber);
-    console.log("Password:", password);
-    alert(`Login successful for phone number: ${phoneNumber}`);
-  } else {
-    alert("Please fill in all required fields.");
-  }
-});

@@ -15,31 +15,41 @@
   <div class="register-form">
     <h2>Register</h2>
     <form id="registerForm">
-      <label for="phone-number">Phone Number</label>
-      <input
-        type="text"
-        id="phone-number"
-        placeholder="Phone Number"
-        required
-      />
-      <button type="submit" class="next-button">Next</button>
+      <div class="form-group active">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" placeholder="Phone Number">
+        <button type="button" class="next-button" onclick="nextStep()">Next</button>
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="First Name">
+        <button type="button" class="next-button" onclick="nextStep()">Next</button>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Last Name">
+        <button type="button" class="next-button" onclick="nextStep()">Next</button>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Email Address">
+        <button type="submit" class="next-button">Sign Up</button>
+      </div>
     </form>
-    <div class="divider">
-      <span>OR WITH</span>
-    </div>
+
+    <div class="divider"></div>
+    <h5>Already have an account?</h5>
     <div class="auth-buttons">
-      <button class="auth-button">Sign Up</button>
-      <button class="auth-button">Sign Up</button>
+      <button class="auth-button">Login</button>
     </div>
+
     <p class="terms">
       By registering, you agree to the Terms, Conditions, and Policies of
       Cash Flow Tracker & Privacy Policy.
     </p>
-    <p class="login">
-      Have an account? <a href="login.html">Log in</a>
-    </p>
   </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
